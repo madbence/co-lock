@@ -1,6 +1,6 @@
 # co-lock
 
-Asyncronous resources, generator style. Finally, Javascript has deadlocks!
+Asynchronous resources, generator style. Finally, Javascript has deadlocks!
 
 ## Install
 
@@ -22,6 +22,8 @@ yield release;
 
 Creates a lock on `target`, yields with `release` when the lock can be acquired.
 If cannot acquire lock within `timeout`, throws error.
+
+Yielding `release` gives control to the next *thread* in the lock's queue.
 
 ## License
 
