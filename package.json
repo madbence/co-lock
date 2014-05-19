@@ -1,0 +1,24 @@
+{
+  "name": "co-lock",
+  "version": "0.0.0",
+  "description": "Lock resources asyncrounously",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madbence/co-lock"
+  },
+  "keywords": [
+    "lock",
+    "mutex",
+    "co"
+  ],
+  "author": "Bence Dányi <madbence@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madbence/co-lock/issues"
+  },
+  "homepage": "https://github.com/madbence/co-lock"
+}
