@@ -1,2 +1,28 @@
-co-lock
-=======
+# co-lock
+
+Asyncronous resources, generator style. Finally, Javascript has deadlocks!
+
+## Install
+
+```
+$ npm install co-lock
+```
+
+## Usage
+
+```js
+var release = yield lock(target);
+// critical section
+yield release;
+```
+
+## API
+
+#### lock(target[, timeout])
+
+Creates a lock on `target`, yields with `release` when the lock can be acquired.
+If cannot acquire lock within `timeout`, throws error.
+
+## License
+
+MIT
